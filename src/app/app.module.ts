@@ -11,6 +11,9 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoListItemComponent } from './todo-list-item/todo-list-item.component';
 import { ApiService } from './api.service';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { TodoComponent } from './todo/todo.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -19,12 +22,15 @@ import { HttpClientModule } from '@angular/common/http';
     TodoListHeaderComponent,
     TodoListFooterComponent,
     TodoListComponent,
-    TodoListItemComponent
+    TodoListItemComponent,
+    TodoComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [TodoDataService, ApiService], //在這裡宣告表示singleton所有的組件共享這個instance
   bootstrap: [AppComponent]

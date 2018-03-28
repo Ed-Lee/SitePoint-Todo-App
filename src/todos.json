@@ -1,9 +1,19 @@
 {
   "todos": [
     {
-      "id": 2,
       "title": "Clean inbox",
-      "complete": false
+      "complete": true,
+      "id": 2
+    },
+    {
+      "title": "Unread email",
+      "complete": false,
+      "id": 4
+    },
+    {
+      "title": "list2",
+      "complete": false,
+      "id": 6
     }
   ]
 }

@@ -34,10 +34,10 @@
   d. updated the TodoDataService to use the new ApiService
   
   e. updated the AppComponent to handle asynchronous API calls
-  
-  f. unit testing 這裡還有問題，需再深入研究關於Angular Unit Test.
 
-  
+4. Part 4 — Use Angular Router to resolve data
+
+  在這部分主要學習如何設定routes, 以及使用resolver在啟用component前先解析取得資料
   	
   
 
