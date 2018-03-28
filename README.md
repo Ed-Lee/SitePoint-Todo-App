@@ -1,5 +1,11 @@
 # TodoApp
 
+這是 SitePoint - Building a todo App with Angular CLI 的一系列程式碼練習
+
+1. Part 1 - Getting out first version of the Todo Application up and running
+
+  在這個部分資料取得利用TodoDataService, 需要注意其注入的Scope，另外還有getter的使用
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server

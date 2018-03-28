@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TodoDataService } from './todo-data.service';
+import { FormsModule } from '@angular/forms';
+import { DiTestComponent } from './di-test/di-test.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DiTestComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [TodoDataService], //在這裡宣告表示singleton所有的組件共享這個instance
   bootstrap: [AppComponent]
 })
 export class AppModule { }
