@@ -5,6 +5,22 @@
 1. Part 1 - Getting out first version of the Todo Application up and running
 
   在這個部分資料取得利用TodoDataService, 需要注意其注入的Scope，另外還有getter的使用
+  
+  a. ng new todo-app 起始一個專案
+  b. 建立Todo, TodoDataService
+  c. 修改app.component.ts, app.component.css, app.component.html
+  d. 部署到GitHub Pages :
+>   	ng build --prod --base-href "https://Ed-Lee.github.io/SitePoint-Todo-App/"
+> 		ngh
+
+
+2. Part 2 - Creating separate components to display a list of todos and a single todo
+
+  在這個部分只要是將原本AppComponent切分成幾個組件，學習組件之間的溝通，靠@Input(), @Output()
+
+  
+  	
+  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
