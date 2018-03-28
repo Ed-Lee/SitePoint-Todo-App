@@ -7,8 +7,11 @@
   在這個部分資料取得利用TodoDataService, 需要注意其注入的Scope，另外還有getter的使用
   
   a. ng new todo-app 起始一個專案
+  	
   b. 建立Todo, TodoDataService
+  	
   c. 修改app.component.ts, app.component.css, app.component.html
+  
   d. 部署到GitHub Pages :
 >   	ng build --prod --base-href "https://Ed-Lee.github.io/SitePoint-Todo-App/"
 > 		ngh
@@ -16,7 +19,23 @@
 
 2. Part 2 - Creating separate components to display a list of todos and a single todo
 
-  在這個部分只要是將原本AppComponent切分成幾個組件，學習組件之間的溝通，靠@Input(), @Output()
+  在這個部分主要是將原本AppComponent切分成幾個組件，學習組件之間的溝通，靠@Input(), @Output()
+  
+3. Part 3 — Update the Todo service to communicate with a REST API back end
+
+  在這個部分主要是將todos資料存取改成透過HttpClient到Json-Server虛擬的api方式
+  
+  a. created a mock REST API back end
+  
+  b. stored the API URL as an environment variable
+  
+  c. created an ApiService to communicate with the REST API back end, 這裡將原來的Http改成HttpClient
+  
+  d. updated the TodoDataService to use the new ApiService
+  
+  e. updated the AppComponent to handle asynchronous API calls
+  
+  f. unit testing 這裡還有問題，需再深入研究關於Angular Unit Test.
 
   
   	
